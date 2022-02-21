@@ -135,7 +135,7 @@ def get_sequence_list_and_phyche_value(input_data, k, phyche_index, extra_phyche
         raise
 
     # Generate phyche_value and sequence_list.
-    from psenacutil import get_phyche_index
+    from .psenacutil import get_phyche_index
 
     phyche_value = extend_phyche_index(get_phyche_index(k, phyche_index), extra_phyche_index)
     sequence_list = get_data(input_data)
